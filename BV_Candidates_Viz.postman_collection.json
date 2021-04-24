@@ -1,0 +1,47 @@
+{
+	"info": {
+		"_postman_id": "95417346-8646-471c-9247-229c57474de8",
+		"name": "BV_Candidates_Viz",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Viz",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"kevin_bi_bukitvista\",\n    \"list_checklist_name_to_compare\": [\"Career Stage\", \"Vital Attributes V2\", \"Culture/Leadership Screening\"],\n    \"board_name\": \"TESTING PROJECT\",\n    \"list_name\": \"TEST KANDIDAT\",\n    \"candidate_names\": [\"KANDIDAT 1\", \"KANDIDAT 2\"],\n    \"api_key\": null, \n    \"api_token\": null \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8080/api/v1/resources/candidates/viz/",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"resources",
+						"candidates",
+						"viz",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
