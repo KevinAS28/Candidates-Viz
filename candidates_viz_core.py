@@ -149,8 +149,11 @@ def visualization(
   lines, labels = plt.thetagrids(np.degrees(label_loc), labels=categories)
   plt.legend()
 
+  cwd = os.getcwd()
   filename = f'candidates_comparasion-{str(time.ctime()).replace(" ", "_")}.png'
-  plt.savefig(filename)
+  file_to_save = os.path.join(cwd, filename)
+  print(f'File to save: {file_to_save}')
+  plt.savefig(file_to_save)
 
   if show:
     plt.show()
